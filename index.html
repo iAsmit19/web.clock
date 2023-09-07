@@ -6,6 +6,7 @@
     <meta name="author" content="Asmit Singh">
     <meta name="description" content="This is a Clock Web Page">
     <title>Clock</title>
+    <link rel="shortcut icon" href="./src/assets/favicon/clock.svg" type="image/x-icon">
     <link rel="stylesheet" href="./src/sheets/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,31 @@
                 <h1>Clock by Asmit</h1>
             </div>
             <div id="clock">
-                
+                <div id="the-time">
+                    <div id="hour">
+                        <h1>00</h1>
+                    </div>
+                    <div class="colon">
+                        <h2>:</h2>
+                    </div>
+                    <div id="minute">
+                        <h1>00</h1>
+                    </div>
+                    <div class="colon">
+                        <h2>:</h2>
+                    </div>
+                    <div id="seconds">
+                        <h1>00</h1>
+                    </div>
+                </div>
+                <div id="the-date">
+                    <h1><span id="month">January</span> <span id="date">01</span>, <span id="year">2023</span></h1>
+                </div>
+            </div>
+            <div id="themechanger">
+                <button id="theme-change">
+                    <img src="./src/assets/theme-change/light-mode.svg" alt="Light Mode" width="30px" draggable="false">
+                </button>
             </div>
         </div>
     </div>
