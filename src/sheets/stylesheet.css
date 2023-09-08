@@ -236,3 +236,7 @@ body {
 
     cursor: pointer;
 }
+
+.dark-mode {
+    content: url("../assets/theme-change/dark-mode.svg");
+}

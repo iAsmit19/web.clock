@@ -22,5 +22,15 @@ setInterval(() => {
     document.getElementById("the-second").innerHTML = second;
     document.getElementById("month").innerHTML = months[month];
     document.getElementById("date").innerHTML = date;
-    document.getElementById("year").innerHTML = year;
 }, 10);
+
+const theme = document.getElementById("theme");
+
+theme.addEventListener("click", (e) => {
+    theme.classList.toggle("dark-mode");
+    document.querySelector(":root").toggle(style.setProperty("--bg", "#040D12"));
+});
+
+if (theme.classList.contains("dark-mode")) {
+    document.querySelector(":root").style.setProperty("--bg", "#040D12");
+}
